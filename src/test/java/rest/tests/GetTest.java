@@ -16,7 +16,7 @@ public class GetTest extends RESTAssuredCommonMethods {
         verifyContentType(response, "JSON");
 
         // Verify the response status code
-        verifyResponseCode(response, 201);
+        verifyResponseCode(response, 200);
 
         // Verify the response time
         verifyResponseTime(response, 10000);

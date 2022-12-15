@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Appium Automation</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Dec 6, 2022 08:08:09 PM</span></a>
+<a href="#"><span class="badge badge-primary">Dec 15, 2022 07:58:52 PM</span></a>
 </li>
 </ul>
 </div>
@@ -45,11 +45,6 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -71,7 +66,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,25 +74,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">hitPostRequest</p>
+            <p class="name">hitGetrequest</p>
             <p class="text-sm">
-              <span>6:55:20 PM</span> / <span>00:00:03:782</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>7:58:53 PM</span> / <span>00:00:03:812</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">hitPostRequest</h5>
-<span class='badge badge-success'>12.07.2022 6:55:20 PM</span>
-<span class='badge badge-danger'>12.07.2022 6:55:24 PM</span>
-<span class='badge badge-default'>00:00:03:782</span>
+<h5 class="test-status text-pass">hitGetrequest</h5>
+<span class='badge badge-success'>12.15.2022 7:58:53 PM</span>
+<span class='badge badge-danger'>12.15.2022 7:58:57 PM</span>
+<span class='badge badge-default'>00:00:03:812</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -108,106 +103,50 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>6:55:24 PM</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:58:57 PM</td>
         <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: 1 expectation failed.
-Response body doesn't match expectation.
-Expected: The content to match the given JSON schema.
-error: instance type (string) does not match any allowed primitive type (allowed: ["boolean"])
-    level: "error"
-    schema: {"loadingURI":"#","pointer":"/properties/id"}
-    instance: {"pointer":"/id"}
-    domain: "validation"
-    keyword: "type"
-    found: "string"
-    expected: ["boolean"]
-
-  Actual: {
-    "name": "Bryant",
-    "job": "BA",
-    "id": "102",
-    "createdAt": "2022-12-07T13:25:22.892Z"
-}
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:98)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
-	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
-	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:293)
-	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
-	at utils.RESTAssuredCommonMethods.validateJsonSchema(RESTAssuredCommonMethods.java:232)
-	at rest.tests.PostTest.hitPostRequest(PostTest.java:36)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</textarea>
-          
+          PASS
         </td>
       </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">hitPostRequest</p>
+            <p class="text-sm">
+              <span>7:58:53 PM</span> / <span>00:00:04:189</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">hitPostRequest</h5>
+<span class='badge badge-success'>12.15.2022 7:58:53 PM</span>
+<span class='badge badge-danger'>12.15.2022 7:58:58 PM</span>
+<span class='badge badge-default'>00:00:04:189</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>6:55:24 PM</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:58:58 PM</td>
         <td>
-          <textarea readonly class="code-block">java.lang.IllegalArgumentException: ScreenCapture path must not be null or empty
-	at com.aventstack.extentreports.util.Assert.notEmpty(Assert.java:12)
-	at com.aventstack.extentreports.ExtentTest.addScreenCaptureFromPath(ExtentTest.java:1074)
-	at listeners.Listeners.onTestFailure(Listeners.java:45)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1797)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1781)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:721)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</textarea>
-          
+          PASS
         </td>
       </tr>
   </tbody>
@@ -224,112 +163,30 @@ error: instance type (string) does not match any allowed primitive type (allowed
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">java.lang.IllegalArgumentException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>java.lang.IllegalArgumentException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>18:55:20 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='1'>hitPostRequest</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">java.lang.AssertionError</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>java.lang.AssertionError</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>18:55:20 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='1'>hitPostRequest</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="container-fluid p-4 view dashboard-view">
+<div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Dec 7, 2022 06:55:19 PM</h3>
+<h3>Dec 15, 2022 07:58:52 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Dec 7, 2022 06:55:24 PM</h3>
+<h3>Dec 15, 2022 07:58:58 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
+<h3>2</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -345,12 +202,12 @@ error: instance type (string) does not match any allowed primitive type (allowed
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
+<div><small data-tooltip='100%'>
+<b>2</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> tests failed,
+<small data-tooltip='0%'><b>0</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -368,9 +225,9 @@ error: instance type (string) does not match any allowed primitive type (allowed
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div><small data-tooltip='100%'><b>2</b> events passed</small></div>
 <div>
-<small data-tooltip='100%'><b>2</b> events failed,
+<small data-tooltip='0%'><b>0</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -387,7 +244,7 @@ error: instance type (string) does not match any allowed primitive type (allowed
 </div></div>
 <script>
 var timeline = {
-"hitPostRequest":3.782
+"hitGetrequest":3.812,"hitPostRequest":4.189
 };
 </script>
 <div class="row">
@@ -410,8 +267,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 1,
+passParent: 2,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -427,8 +284,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 0,
-failEvents: 2,
+passEvents: 2,
+failEvents: 0,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0
