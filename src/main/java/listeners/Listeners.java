@@ -3,6 +3,7 @@ package listeners;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -32,16 +33,16 @@ public class Listeners extends AppiumBaseClass implements ITestListener {
     public void onTestFailure(ITestResult iTestResult) {
         String filePath = null;
         threadLocal.get().fail(iTestResult.getThrowable());
-        /*try {
-            //androidDriver = (WebDriver) iTestResult.getTestClass().getRealClass().getField("androidDriver");
+       /* try {
+            androidDriver = (WebDriver) iTestResult.getTestClass().getRealClass().getField("androidDriver");
         } catch (NoSuchFieldException e) {
             e.printStackTrace();
-        }*/
+        }
         try {
             filePath = getScreenShot(iTestResult.getMethod().getMethodName());
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
         threadLocal.get().addScreenCaptureFromPath(filePath,iTestResult.getMethod().getMethodName());
     }
 
